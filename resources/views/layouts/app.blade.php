@@ -14,7 +14,9 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css" integrity="sha512-l7qZAq1JcXdHei6h2z8h8sMe3NbMrmowhOl+QkP3UhifPpCW2MC4M0i26Y8wYpbz1xD9t61MLT9L1N773dzlOA==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css"
+    integrity="sha512-l7qZAq1JcXdHei6h2z8h8sMe3NbMrmowhOl+QkP3UhifPpCW2MC4M0i26Y8wYpbz1xD9t61MLT9L1N773dzlOA=="
+    crossorigin="anonymous" />
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -51,19 +53,16 @@ integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amn
                         <!--Nav Bar Hooks - Do not delete!!-->
                         <li class="nav-item">
                             <a href="{{ url('/home') }}" class="nav-link"><i
-                                    class="fab fa-laravel text-success"></i> Dashboard</a>
+                                    class="text-primary fa fa-solid fa-chart-line"></i> Dashboard</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/fichas') }}" class="nav-link"><i
-                                    class="fab fa-laravel text-warning"></i> Fichas</a>
+                            <a href="{{ url('/fichas') }}" class="nav-link"><i class="text-success fas fa-file-pdf"></i> Fichas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/tecnicos') }}" class="nav-link"><i
-                                    class="fab fa-laravel text-danger"></i> Tecnicos</a>
+                            <a href="{{ url('/tecnicos') }}" class="nav-link"><i class="text-danger fas fa-tools"></i> Técnicos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/ficha-datatables') }}" class="nav-link"><i
-                                    class="fab fa-laravel text-info"></i> Reporte</a>
+                            <a href="{{ url('/ficha-datatables') }}" class="nav-link"><i class="text-info fas fa-file-excel"></i></i> Reporte</a>
                         </li>
                     </ul>
                 @endauth()

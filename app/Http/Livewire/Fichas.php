@@ -105,7 +105,7 @@ class Fichas extends Component
         ]);
 
         if ($this->photo == null){
-            $this->photo = 'storage/user_placeholder.png';
+            $this->photo = 'photos/user_placeholder.png';
             $photoPath = $this->photo;
         } else {
             /* $file = $this->photo;
@@ -114,8 +114,7 @@ class Fichas extends Component
             $filename           = Str::uuid()->toString(). '.' . $extension;
             $upload_success     = $file->move($destinationPath, $filename); */
             //$this->photo->store('photos','public');
-            $photoPath = $this->photo->store('public');
-            // $photoPath = str_replace('public/', 'storage/', $photoPath);
+            $photoPath = $this->photo->store('photos');
         }
 
         Ficha::create([
@@ -219,14 +218,13 @@ class Fichas extends Component
         ]);
 
         if ($this->photo == null){
-            $this->photo = 'user_placeholder.png';
+            $this->photo = 'photos/user_placeholder.png';
             $photoPath = $this->photo;
         }
         elseif ($this->photo == $this->photoUploaded) {
             $photoPath = $this->photoUploaded;
         } elseif ($this->photo != $this->photoUploaded) {
-            $photoPath = $this->photo->store('public');
-           // $photoPath = str_replace('public/', 'storage/', $photoPath);
+            $photoPath = $this->photo->store('photos');
         }
         else {
             /* $file = $this->photo;

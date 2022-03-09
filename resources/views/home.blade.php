@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5><span class="text-center fa fa-home"></span> @yield('title')</h5>
+                        <h5><span class="text-primary fa fa-solid fa-chart-line"></span> @yield('title')</h5>
                     </div>
                     <div class="card-body">
                         <h5>Hola <strong>{{ Auth::user()->name }},</strong>
@@ -33,7 +33,7 @@
                                     <div class="card border-success text-success p-3 my-card"><span
                                             class="text-center fa fa-person-booth" aria-hidden="true"></span></div>
                                     <div class="text-success text-center mt-3">
-                                        <h4>Solicitudes Procesadas</h4>
+                                        <h4>Total Atendidas</h4>
                                     </div>
                                     <div class="text-success text-center mt-2">
                                         <h1>{{ $solicitudes_procesadas }}</h1>
