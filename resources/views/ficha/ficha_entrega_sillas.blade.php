@@ -221,7 +221,6 @@
                             <td class="text-center border-bottom" width="100"> {{ $ficha->fecha_cita }}</td>
                             <td rowspan="2" class="text-center">
                                 <img src="{{ public_path() . '/' . $ficha->photo }}" alt="" width="200" height="200">
-                                {{ public_path() . '/' . $ficha->photo }}
                             </td>
                         </tr>
                         <tr>
